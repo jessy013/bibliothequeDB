@@ -11,8 +11,8 @@ class BookService extends ServiceEntityRepository
 
     public function __construct()
     {
-        $this->addBook(new Book('','','',));
-        $this->addBook(new Book('','','',));
+        $this->addBook(new Book('Le Masque hanté', ' Celui-là fera l affaire  pense Carolyn en choisissant pour la fête de Halloween le masque le plus horrible dans la boutique de farces et attrapes Mais, pourquoi, une fois posé sur son visage le masque s anime-t-il tout à coup ? Pourquoi la voix de Carolyn devient-elle soudain grave et menaçante ?','R.L stine',));
+        $this->addBook(new Book('la rue maudite','','',));
         $this->addBook(new Book('', '', '',));
         $this->addBook(new Book('', '', '',));
         $this->addBook(new Book('', '', '',));
