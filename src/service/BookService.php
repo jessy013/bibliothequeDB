@@ -2,11 +2,12 @@
 namespace App\Service;
 
 use App\Entity\Book;
+use Doctrine\Bundle\DoctrineBundle\Repository\ServiceEntityRepository;
 
-class BookService
+class BookService extends ServiceEntityRepository
 {
     
-    private $_BookService= [];
+    private $_listBook= [];
 
     public function __construct()
     {

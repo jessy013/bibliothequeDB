@@ -2,7 +2,7 @@
 namespace App\Service;
 
 use app\entity\Autor;
-
+use Doctrine\ORM\EntityManager;
 use doctrine\orm\EntityManagerInterface;
 
 
@@ -44,7 +44,7 @@ class AutorService
     public function addAutor($pAutor)
     {
         array_push($this->_listAutor, $pAutor);
-        $this->_entityManager->persist($Autor);
-        $this->_entityManager->flush($Autor);
+        $this->_entityManager->persist($pAutor);
+        $this->_entityManager->flush($pAutor);
     }
 }

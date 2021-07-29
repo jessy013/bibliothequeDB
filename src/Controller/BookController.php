@@ -1,7 +1,7 @@
 <?php
 
 namespace App\Controller;
-
+use App\Controller\Book;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
@@ -15,6 +15,18 @@ class BookController extends AbstractController
     {
         return $this->render('book/index.html.twig', [
             'controller_name' => 'BookController',
+        ]);
+    }
+
+    /**
+     * @route("/book/list", name="list_book")
+     */
+    public function list(BookService $BookService):Response
+    {
+        $listBook = $BookService->getlist();
+        return $this render('Book/list.html.twig',[
+            'controller_name' => 'BookController',
+            'listBook' => $listBook
         ]);
     }
 }
