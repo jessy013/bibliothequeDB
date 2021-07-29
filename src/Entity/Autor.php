@@ -72,4 +72,10 @@ class Autor
 
         return $this;
     }
+    public function __construct($pName,$pFirstname,$pBiography)
+    {
+        $this->name = $pName;
+        $this->firstname = $pFirstname;
+        $this->biography = $pBiography;
+    }
 }

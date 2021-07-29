@@ -72,4 +72,10 @@ class Book
 
         return $this;
     }
+    public function __construct($pTitle,$pResume,$pAutor)
+    {
+       $this->title = $pTitle;
+       $this->resume = $pResume;
+       $this->autor = $pAutor; 
+    }
 }
