@@ -1,7 +1,7 @@
 <?php
 
 namespace App\Controller;
-use App\Controller\BookService;
+use app\service\BookService;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
